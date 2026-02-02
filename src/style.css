@@ -1,0 +1,136 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header h1{
+  color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  text-shadow: 0px 0px 10px rgb(250, 7, 7);
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator{
+  height: 300px;
+  width:300px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgb(66, 55, 55) 0px 0px 15px 2px;
+}
+
+.inputariya input{
+  height: 45px;
+  width: 240px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 3px;
+  background-color: rgb(73, 53, 53);
+  color: rgb(0, 0, 0);
+}
+
+.buttonArriya{
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  
+  
+}
+
+.button{
+  height:30px;
+  width: 35px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px rgb(196, 166, 166);
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(58, 65, 71);
+  font-weight: 500;
+  font-size: large;
+}
+.button:hover{
+  background-color: rgb(24, 27, 31);
+}
+
+@media(width<=640px){
+
+  header h1{
+    display:none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  .calculator{
+  height:100%;
+  width:100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items:center;
+  border-radius: 10px;
+  box-shadow: rgb(66, 55, 55) 0px 0px 15px 2px;
+}
+
+.inputariya input{
+  height: 70px;
+  width: 95vw;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  padding: 3px;
+  background-color: rgb(73, 53, 53);
+  color: rgb(0, 0, 0);
+}
+.buttonArriya{
+   width: 98vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.button{
+  height:60px;
+  width: 55px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px rgb(196, 166, 166);
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(58, 65, 71);
+  font-size: larger;
+  font-weight: 500;
+
+}
+
+}
