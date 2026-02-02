@@ -109,3 +109,13 @@ showTextEqualtoo.addEventListener('click',(e)=>{
   updateScreen();
 })
 
+showTextCU.addEventListener('click',()=>{
+  text1 = text1.slice(0, -1)
+  if(text1==='0')text1=''
+  updateScreen()
+
+})
+
+showTextCli.addEventListener('click',()=>{
+  alert('Only for fun');
+})
