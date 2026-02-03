@@ -119,3 +119,10 @@ showTextCU.addEventListener('click',()=>{
 showTextCli.addEventListener('click',()=>{
   alert('Only for fun');
 })
+
+document.addEventListener('keydown',(e)=>{
+  if(e.key==='A'){
+    console.log(e)
+  }
+ 
+})
