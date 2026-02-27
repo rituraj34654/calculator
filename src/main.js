@@ -110,8 +110,10 @@ showTextEqualtoo.addEventListener('click',(e)=>{
 })
 
 showTextCU.addEventListener('click',()=>{
-  text1 = text1.slice(0, -1)
-  if(text1==='0')text1=''
+   if(text1==='')text1=''
+   else{
+      text1 = text1.slice(0, -1)
+     }
   updateScreen()
 
 })
@@ -121,8 +123,82 @@ showTextCli.addEventListener('click',()=>{
 })
 
 document.addEventListener('keydown',(e)=>{
-  if(e.key==='A'){
-    console.log(e)
+console.log(e)
+
+  if(e.key==='1'){
+    text1 += '1';
+    updateScreen();
   }
- 
+  else if(e.key === '2'){
+    text1 += '2';
+    updateScreen();
+  }
+  else if(e.key === '3'){
+    text1 += '3';
+    updateScreen();
+  }
+  else if(e.key === '4'){
+    text1 += '4';
+    updateScreen();
+  }
+  else if(e.key === '5'){
+    text1 += '5';
+    updateScreen();
+  }
+  else if(e.key === '6'){
+    text1 += '6';
+    updateScreen();
+  }
+  else if(e.key === '7'){
+    text1 += '7';
+    updateScreen();
+  }
+  else if(e.key === '8'){
+    text1 += '8';
+    updateScreen();
+  }
+  else if(e.key === '9'){
+    text1 += '9';
+    updateScreen();
+  }
+  else if(e.key === '0'){
+    text1 += '0';
+    updateScreen();
+  }
+  else if(e.key === '+' ){
+    text1 += '+';
+    updateScreen();
+  }
+  else if(e.key === '-' ){
+    text1 += '-';
+    updateScreen();
+  }
+  else if(e.key === '*' ){
+    text1 += '*';
+    updateScreen();
+  }
+  else if(e.key === '/' ){
+    text1 += '/';
+    updateScreen();
+  }
+  else if(e.key === '%' ){
+    text1 += '%';
+    updateScreen();
+  }
+  else if(e.key === 'Enter'){
+  if(text1 ==='') text1 = 'enter any number'
+  else
+    {
+     text1 = eval(text1)
+    }
+    updateScreen();
+  }
+  else if(e.key === 'Backspace'){
+  if(text1 ==='') text1 = 'enter any number'
+  else
+    {
+     text1 = text1.slice(0,-1);
+    }
+    updateScreen();
+  }
 })
